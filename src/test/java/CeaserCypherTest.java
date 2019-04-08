@@ -32,12 +32,12 @@ public class CeaserCypherTest {
         String expectedOutput = "OJQTFZ";
         assertEquals(expectedOutput, testCeaserCypher.cypher("NIPSEY", 1));
     }
-    // @Test
-    // public void cypher_checkCaseInsensitivity_String(){
-    //     CeaserCypher testCeaserCypher = new CeaserCypher();
-    //     String expectedOutput = "Ojqtfz";
-    //     assertEquals(expectedOutput, testCeaserCypher.cypher("Nipsey", 1));
-    // }
+    @Test
+    public void cypher_checkCaseInsensitivity_String(){
+        CeaserCypher testCeaserCypher = new CeaserCypher();
+        String expectedOutput = "Ojqtfz";
+        assertEquals(expectedOutput, testCeaserCypher.cypher("Nipsey", 1));
+    }
     // @Test
     // public void cypher_checkSentenceCypher_String(){
     //     CeaserCypher testCeaserCypher = new CeaserCypher();
