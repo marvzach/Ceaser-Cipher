@@ -44,10 +44,10 @@ public class CeaserCypherTest {
         String expectedOutput = "Jv cxqebo txp jfppfkd Txo Iloa Lifsbo Kloqe";
         assertEquals(expectedOutput, testCeaserCypher.cypher("My father was missing War Lord Oliver North", 23));
     }
-    // @Test
-    // public void cypher_testDecryption_String(){
-    //     CeaserCypher testCeaserCypher = new CeaserCypher();
-    //     String expectedOutput = "My father was missing War Lord Oliver North";
-    //     assertEquals(expectedOutput, testCeaserCypher.decypher("Jv cxqebo txp jfppfkd Txo Iloa Lifsbo Kloqe", 23));
-    // }
+    @Test
+    public void cypher_testDecryption_String(){
+        CeaserCypher testCeaserCypher = new CeaserCypher();
+        String expectedOutput = "My father was missing War Lord Oliver North";
+        assertEquals(expectedOutput, testCeaserCypher.decypher("Jv cxqebo txp jfppfkd Txo Iloa Lifsbo Kloqe", 23));
+    }
 }
