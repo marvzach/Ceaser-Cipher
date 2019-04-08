@@ -20,12 +20,12 @@ public class CeaserCypherTest {
         String expectedOutput = "Enter letters only, and the key must between 1 and 25";
         assertEquals(expectedOutput, testCeaserCypher.cypher("Dogs of berlin sn2", 27));
     }
-    // @Test
-    // public void cypher_checkEncryptionOfSingleLetter_String(){
-    //     CeaserCypher testCeaserCypher = new CeaserCypher();
-    //     String expectedOutput = "B";
-    //     assertEquals(expectedOutput, testCeaserCypher.cypher("A", 1));
-    // }
+    @Test
+    public void cypher_checkEncryptionOfSingleLetter_String(){
+        CeaserCypher testCeaserCypher = new CeaserCypher();
+        String expectedOutput = "B";
+        assertEquals(expectedOutput, testCeaserCypher.cypher("A", 1));
+    }
     // @Test
     // public void cypher_checkEncryptionOfAWord_String(){
     //     CeaserCypher testCeaserCypher = new CeaserCypher();
