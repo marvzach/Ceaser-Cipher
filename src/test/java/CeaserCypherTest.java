@@ -8,12 +8,12 @@ public class CeaserCypherTest {
         String expectedOutput = "Enter letters only";
         assertEquals(expectedOutput, testCeaserCypher.cypher("Dogs of berlin SN2", 2));
     }
-    // @Test
-    // public void cypher_checkValueOfKey_String(){
-    //     CeaserCypher testCeaserCypher = new CeaserCypher();
-    //     String expectedOutput = "The key must between 1 and 25";
-    //     assertEquals(expectedOutput, testCeaserCypher.cypher("Dogs of berlin", 27));
-    // }
+    @Test
+    public void cypher_checkValueOfKey_String(){
+        CeaserCypher testCeaserCypher = new CeaserCypher();
+        String expectedOutput = "The key must between 1 and 25";
+        assertEquals(expectedOutput, testCeaserCypher.cypher("Dogs of berlin", 27));
+    }
     // @Test
     // public void cypher_checkBothStringAndKey_String(){
     //     CeaserCypher testCeaserCypher = new CeaserCypher();
